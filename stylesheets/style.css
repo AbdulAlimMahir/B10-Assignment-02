@@ -1,0 +1,741 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/miama');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Inter, sans-serif;
+}
+
+body {
+  color: #ffffff;
+  font-weight: 200;
+  background-image: linear-gradient(180deg, #111111 0%, #1d1c1c 20%, #111111 40%);
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+div.apart {
+  width: 100%;
+  height: 96px;
+}
+
+@media only screen and (max-width:425px) {
+  div.apart {
+    height: 32px;
+  }
+}
+
+/* Header > Navbar */
+header {
+  background-color: transparent;
+  padding-top: 48px;
+  width: 100%;
+  height: 64px;
+}
+
+.logo {
+  display: inline;
+}
+
+.logo a {
+  display: inline;
+  color: #E6533C;
+  font-style: italic;
+  margin: 128px;
+}
+
+.logo a .i {
+  color: #E6533C;
+  transition: color ease-in 150ms;
+}
+
+.logo a:hover .i {
+  color: #ffffff;
+}
+
+.navbar {
+  float: right;
+  width: auto;
+  margin: auto 128px;
+  padding: 8px;
+  border: 1px solid #ffffff1a;
+  border-radius: 32px;
+}
+
+@media only screen and (max-width: 425px) {
+  header {
+    padding-top: 16px;
+  }
+
+  .logo a {
+    margin: 32px;
+  }
+
+  .navbar {
+    margin: 0 32px;
+  }
+
+  .navbar .hamburger {
+    display: block;
+  }
+
+  header .navbar nav {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .navbar .hamburger {
+    display: none;
+  }
+}
+
+header nav ul li {
+  font-size: 0.9rem;
+  display: inline;
+  padding: 8px 24px;
+  margin: 2px;
+  border-radius: 32px;
+}
+
+header nav ul li:hover {
+  border: 1px solid #e6533ca2;
+  border-radius: 32px;
+  padding: 8px 23px;
+}
+
+.active {
+  border-radius: 32px;
+  background-color: #E6533C;
+}
+
+.headline {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+p {
+  color: #ffffff80;
+}
+
+/* Hero Section */
+.hero {
+  width: 100%;
+  display: flex;
+}
+
+.hero .dialogue {
+  margin: 32px 128px;
+  width: 30%;
+  float: left;
+}
+
+.hero .dialogue .heading {
+  margin: 32px 0px;
+}
+
+.hero .dialogue h1 {
+  line-height: 0.8;
+  margin: 24px 0;
+}
+
+.miama {
+  font-size: 6rem;
+  font-family: Miama, cursive;
+  font-weight: lighter;
+}
+
+.cta button {
+  background-color: transparent;
+  padding: 10px 24px;
+  margin: 0 4px;
+  border: 1px solid #ffffff1a;
+  border-radius: 32px;
+  transition: border ease-in 250ms;
+}
+
+.cta button:hover {
+  border: 1px solid #E6533C;
+}
+
+.cta button.active {
+  background-color: #E6533C;
+  border: none;
+}
+
+@media only screen and (max-width: 425px) {
+  .headline {
+    font-size: 2.4rem;
+  }
+
+  .hero {
+    display: block;
+  }
+
+  .hero .dialogue {
+    width: 85%;
+    margin: 0 32px;
+  }
+
+  .hero .dialogue .cta {
+    width: 85%;
+  }
+
+  .hero .dialogue .heading {
+    margin-top: 0px;
+  }
+
+  .hero .dialogue .heading p {
+    width: 80%;
+    margin-right: 16px;
+  }
+
+  .miama {
+    font-size: 5rem;
+  }
+
+  .cta button {
+    padding: 16px 24px;
+  }
+}
+
+/* Hero > Persona */
+.hero .persona {
+  width: 20%;
+  float: right;
+  margin: 32px auto;
+  overflow: hidden;
+}
+
+.hero .persona img {
+  max-width: 100%;
+  height: auto;
+}
+
+.card {
+  background-color: #ffffff1a;
+  border-radius: 8px;
+}
+
+.card1 p,
+.card2 p {
+  font-size: 0.8rem;
+  margin-top: 8px;
+}
+
+.card1 span,
+.card2 span {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.card1 {
+  width: 140px;
+  height: 60px;
+  position: absolute;
+  top: 256px;
+  right: 128px;
+  padding: 12px;
+}
+
+.card2 .circle {
+  width: 30px;
+  height: 30px;
+  background-color: #E6533C;
+  border-radius: 40px;
+  float: left;
+  margin: 20px 16px;
+}
+
+.card2 {
+  width: 180px;
+  height: 70px;
+  position: absolute;
+  top: 500px;
+  right: 400px;
+}
+
+@media only screen and (max-width: 425px) {
+  .hero .persona {
+    width: 90%;
+    margin: 0 24px 0 0;
+  }
+
+  .card1 {
+    top: 480px;
+    right: 12px;
+  }
+
+  .card2 {
+    top: 650px;
+    right: 180px;
+  }
+}
+
+/* Habit */
+.habits {
+  width: 100%;
+  margin-bottom: 96px;
+}
+
+.habit-top {
+  width: 60%;
+  margin: 0 auto 64px;
+}
+
+.habit-top h1 {
+  margin-bottom: 18px;
+  text-align: center;
+}
+
+.habit-top p {
+  width: 85%;
+  margin: 0 auto;
+  /* justify-content: center; */
+  text-align: center;
+}
+
+.habit-list {
+  margin: 0 128px;
+  display: flex;
+}
+
+.habit {
+  width: 220px;
+  height: 220px;
+  margin: 0 26px;
+}
+
+.habit img {
+  width: 100%;
+  height: 100%;
+  border-radius: 999px;
+  box-shadow: 0px 0px 4px 4px #ffffff1a;
+  object-fit: cover;
+  opacity: 0.7;
+  transition: opacity ease-in 250ms;
+}
+
+.habit img:hover {
+  opacity: 1.0;
+}
+
+.tagline {
+  color: #ffffff;
+  font-weight: 300;
+  font-size: 1.2rem;
+  margin: 8px 0;
+  text-align: center;
+}
+
+.desc_line {
+  font-weight: 200;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+@media only screen and (max-width: 425px) {
+  .habit-top {
+    width: 100%;
+  }
+
+  .habit-list {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .habit {
+    margin: 0 auto 120px;
+  }
+}
+
+/* Extra Miles */
+.miles {
+  width: 80%;
+  height: 375px;
+  background-color: #222222;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.miles .mile_text {
+  width: 40%;
+  float: left;
+  margin: 32px 48px;
+}
+
+.miles .mile_text h1 {
+  margin-bottom: 32px;
+}
+
+.miles .mile_text p {
+  margin-bottom: 32px;
+}
+
+.miles .runner {
+  float: right;
+  padding: 32px;
+}
+
+.miles .runner img {
+  max-width: 366px;
+  height: 312px;
+  object-fit: cover;
+  border-radius: 10px;
+  object-position: 100%;
+  opacity: 0.7;
+  transition: opacity ease-in 250ms;
+}
+
+.miles .runner img:hover {
+  opacity: 1.0;
+}
+
+@media only screen and (max-width:425px) {
+  .miles {
+    width: 90%;
+    height: 600px;
+    margin: 0 20px;
+    margin-right: 0;
+  }
+
+  .miles .mile_text {
+    width: 80%;
+    margin: 32px;
+  }
+
+  .miles .mile_text .cta button {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .miles .runner {
+    padding: 0 32px;
+  }
+
+  .miles .runner img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+}
+
+/* BMI Calculator */
+.bmi_heading {
+  width: 50%;
+  margin: 0px auto;
+}
+
+.bmi_heading h1 {
+  margin: 24px 0;
+}
+
+@media only screen and (max-width:425px) {
+  .bmi_heading {
+    width: 85%;
+  }
+}
+
+.bmi {
+  background-color: #222222;
+  margin: 32px auto 0;
+  height: 730px;
+}
+
+.bmi .chart {
+  width: 40%;
+  margin-left: 128px;
+  padding: 48px 0;
+  float: left;
+}
+
+.bmi .chart table {
+  width: 60%;
+  text-align: left;
+}
+
+.bmi .chart table caption {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: left;
+  margin: 0 0 32px;
+}
+
+.bmi .chart table,
+th,
+td {
+  border: 1px solid #ffffff1a;
+  border-collapse: collapse;
+  padding: 12px 24px;
+}
+
+.bmi .chart table th {
+  font-weight: 500;
+}
+
+.bmi .chart table td {
+  font-size: 0.9rem;
+}
+
+@media only screen and (max-width:425px) {
+  .bmi .chart {
+    width: 85%;
+    margin: 0 auto;
+    padding: 32px;
+  }
+
+  .bmi .chart table {
+    width: 100%;
+  }
+
+  .bmi .chart table caption {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+}
+
+.bmi .calc {
+  width: 50%;
+  float: right;
+  margin: 48px 0 32px;
+}
+
+.bmi .calc h2 {
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+}
+
+.bmi .calc p {
+  width: 80%;
+}
+
+@media only screen and (max-width:425px) {
+  .bmi .calc {
+    width: 85%;
+    float: left;
+    margin: 18px 32px;
+  }
+}
+
+input[type=number],
+select {
+  color: #ffffff80;
+  background-color: #ffffff1a;
+  width: 17%;
+  padding: 10px 20px;
+  margin: 4px 2px;
+  display: inline-block;
+  border: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  background-color: #E6533C;
+  color: white;
+  padding: 10px 24px;
+  margin: 24px 8px;
+  border: 1px solid #E6533C;
+  border-radius: 32px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: transparent;
+}
+
+@media only screen and (max-width:425px) {
+  .calc_form form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 96%;
+    padding-left: 24px;
+  }
+
+  input[type=number],
+  select {
+    width: 44%;
+    margin: 8px 16px 8px 0;
+  }
+
+  select#Activity {
+    width: 92%;
+    height: 44px;
+  }
+
+  input[type=submit] {
+    width: 50%;
+    padding: 16px;
+    margin: 16px 8px;
+  }
+}
+
+.team {
+  margin: 0 auto;
+}
+
+.team .team_top {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.team .team_top h1 {
+  margin-bottom: 32px;
+}
+
+@media only screen and (max-width:425px) {
+  .team .team_top {
+    width: 85%;
+  }
+
+  .team .team_top h1 {
+    margin-bottom: 16px;
+  }
+}
+
+.members {
+  margin: 64px 238px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #222222;
+  border-radius: 10px;
+}
+
+.trainer {
+  width: 256px;
+  margin: 16px;
+  opacity: 0.7;
+  transition: opacity ease-in 250ms;
+}
+
+.trainer:hover {
+  opacity: 1.0;
+}
+
+.trainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.trainer .mentor {
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding-top: 8px;
+  margin-top: -60px;
+  margin-left: 16px;
+}
+
+.trainer .post {
+  margin-left: 16px;
+}
+
+@media only screen and (max-width:425px) {
+  .members {
+    width: 85%;
+    flex-direction: column;
+    margin: 32px auto;
+  }
+
+  .members .trainer {
+    width: 85%;
+    margin: 24px auto;
+  }
+
+  .trainer img {
+    width: 260px;
+    height: 220px;
+  }
+}
+
+/* Footer */
+footer {
+  width: 100%;
+  height: 370px;
+  background-color: #1d1c1c;
+  /* background-image: linear-gradient(180deg, #111111 0%, #1d1c1c 20%, #111111 40%); */
+}
+
+.myfoot {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.foot_left {
+  width: 30%;
+  margin: 64px 128px;
+}
+
+.footer_logo a {
+  font-size: 3rem;
+  margin: 32px 0;
+}
+
+.foot_left p {
+  margin: 24px 0;
+}
+
+.foot-center,
+.foot-right {
+  width: 20%;
+}
+
+.foot-center h2,
+.foot-right h2 {
+  font-size: 1.5rem;
+  margin: 24px 0;
+}
+
+.foot-center ul li a,
+.foot-right ul li a {
+  display: inline-block;
+  margin: 8px 0;
+  color: #ffffff80;
+}
+
+footer hr {
+  width: 60%;
+  margin: 0 auto;
+  border: 1px solid #ffffff1a;
+}
+
+.rights {
+  width: 60%;
+  margin: 0 auto;
+  padding: 24px 0;
+  text-align: center;
+}
+
+@media only screen and (max-width:425px) {
+  .myfoot {
+    flex-direction: column;
+  }
+
+  .foot_left,
+  .foot-center,
+  .foot-right {
+    width: 85%;
+    margin: 16px auto 0;
+  }
+
+  footer hr {
+    width: 85%;
+    margin: 24px auto 0;
+  }
+}
