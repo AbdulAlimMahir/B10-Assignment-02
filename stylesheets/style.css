@@ -9,7 +9,8 @@
 
 body {
   color: #ffffff;
-  font-weight: 200;
+  font-weight: 300;
+  line-height: 1.4;
   background-image: linear-gradient(180deg, #111111 0%, #1d1c1c 20%, #111111 40%);
 }
 
@@ -438,7 +439,12 @@ p {
 }
 
 .bmi_heading h1 {
+  text-align: center;
   margin: 24px 0;
+}
+
+.bmi_heading p {
+  text-align: center;
 }
 
 @media only screen and (max-width:425px) {
@@ -450,7 +456,7 @@ p {
 .bmi {
   background-color: #222222;
   margin: 32px auto 0;
-  height: 730px;
+  height: 450px;
 }
 
 .bmi .chart {
@@ -606,7 +612,7 @@ input[type=submit]:hover {
 }
 
 .members {
-  margin: 64px 238px;
+  margin: 64px 238px 0;
   display: flex;
   flex-wrap: wrap;
   background-color: #222222;
@@ -636,7 +642,7 @@ input[type=submit]:hover {
   font-size: 1.1rem;
   font-weight: 500;
   padding-top: 8px;
-  margin-top: -60px;
+  margin-top: -70px;
   margin-left: 16px;
 }
 
@@ -662,12 +668,123 @@ input[type=submit]:hover {
   }
 }
 
+/* Membership | Custom Section */
+.ship {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.ship_top {
+  width: 50%;
+  margin: 0 auto 64px;
+  text-align: center;
+}
+
+.ship_top h1,
+ship_top p {
+  margin: 24px 0;
+}
+
+.packages {
+  display: flex;
+  justify-content: space-around;
+}
+
+.pack {
+  width: 25%;
+  background-color: #ffffff1a;
+  padding: 32px;
+  border-radius: 12px;
+}
+
+.pack_label {
+  margin: 8px 0;
+}
+
+.highlight-bg {
+  background-image: linear-gradient(330deg, #E6533C 18%, #ff8a78 84%);
+  scale: 1.05;
+  transition: scale ease-out 200ms, box-shadow ease-out 200ms;
+}
+
+.highlight-bg:hover {
+  scale: 1.0;
+  box-shadow: 0px 0px 16px 0px #8d716d;
+}
+
+.highlight-bg p,
+.highlight-bg span,
+.highlight-bg a {
+  color: #111111;
+  display: inline;
+}
+
+.label {
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.price {
+  color: #ffffff;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.highlight-bg .price {
+  color: #0061ff !important;
+
+}
+
+.best_value {
+  color: #ffffff !important;
+  font-size: 0.8rem;
+  background-color: #0061ff;
+  padding: 4px 12px;
+  border-radius: 16px;
+  float: right;
+}
+
+.pack_bottom {
+  margin-top: 32px;
+}
+
+.pack_bottom a {
+  font-size: 0.8rem;
+  text-decoration: underline;
+}
+
+.mem_join {
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  color: #ffffff;
+  padding: 12px 32px;
+  border-radius: 24px;
+  float: right;
+  opacity: 0.0;
+  transition: opacity ease-in 200ms;
+}
+
+.pack:hover .mem_join {
+  opacity: 1.0;
+}
+
+.mem_join a {
+  text-decoration: none;
+}
+
+.highlight-btn {
+  color: #111111;
+  background-color: #ffffff;
+  opacity: 1.0 !important;
+}
+
 /* Footer */
 footer {
   width: 100%;
   height: 370px;
   background-color: #1d1c1c;
-  /* background-image: linear-gradient(180deg, #111111 0%, #1d1c1c 20%, #111111 40%); */
 }
 
 .myfoot {
